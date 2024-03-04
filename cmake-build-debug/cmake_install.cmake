@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/mjk/CLionProjects/CppProgramming-EunsaemYang
+# Install script for directory: C:/Users Files/mjk/Coding/Clion/CppProgramming-EunsaemYang
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/mjk/CLionProjects/CppProgramming-EunsaemYang/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users Files/mjk/Coding/Clion/CppProgramming-EunsaemYang/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
