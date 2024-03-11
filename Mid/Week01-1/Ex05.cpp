@@ -15,7 +15,7 @@ int main() {
     cout << "Octal >> "; cin >> oct >> octal;
     cout << "Hexadecimal >> "; cin >> hex >> hexadecimal;
     cout << "Boolean >> "; cin >> boolalpha >> boolean;
-    cout << decimal << '\n';
+    cout << fixed << decimal << '\n';
     cout << oct << octal << '\n';
     cout << hex << hexadecimal << '\n';
     cout << boolalpha << boolean << '\n';

@@ -49,11 +49,11 @@ cmake_ninja_workdir = C$:/Users$ Files/mjk/Coding/Clion/CppProgramming-EunsaemYa
 
 build cmake_object_order_depends_target_Run: phony || CMakeFiles/Run.dir
 
-build CMakeFiles/Run.dir/Mid/Week01-2/Ex01.cpp.obj: CXX_COMPILER__Run_unscanned_Debug C$:/Users$ Files/mjk/Coding/Clion/CppProgramming-EunsaemYang/Mid/Week01-2/Ex01.cpp || cmake_object_order_depends_target_Run
-  DEP_FILE = CMakeFiles\Run.dir\Mid\Week01-2\Ex01.cpp.obj.d
+build CMakeFiles/Run.dir/Mid/Week02-1/Te11.cpp.obj: CXX_COMPILER__Run_unscanned_Debug C$:/Users$ Files/mjk/Coding/Clion/CppProgramming-EunsaemYang/Mid/Week02-1/Te11.cpp || cmake_object_order_depends_target_Run
+  DEP_FILE = CMakeFiles\Run.dir\Mid\Week02-1\Te11.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Run.dir
-  OBJECT_FILE_DIR = CMakeFiles\Run.dir\Mid\Week01-2
+  OBJECT_FILE_DIR = CMakeFiles\Run.dir\Mid\Week02-1
 
 
 # =============================================================================
@@ -63,7 +63,7 @@ build CMakeFiles/Run.dir/Mid/Week01-2/Ex01.cpp.obj: CXX_COMPILER__Run_unscanned_
 #############################################
 # Link the executable Run.exe
 
-build Run.exe: CXX_EXECUTABLE_LINKER__Run_Debug CMakeFiles/Run.dir/Mid/Week01-2/Ex01.cpp.obj
+build Run.exe: CXX_EXECUTABLE_LINKER__Run_Debug CMakeFiles/Run.dir/Mid/Week02-1/Te11.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Run.dir

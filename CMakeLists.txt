@@ -3,4 +3,4 @@ project(CppProgramming_EunsaemYang)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Run Mid/Week01-2/Ex01.cpp)
+add_executable(Run Mid/Week02-1/Te11.cpp)
