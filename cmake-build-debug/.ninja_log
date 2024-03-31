@@ -1,7 +1,7 @@
 # ninja log v5
 0	251	7330522674191828	CMakeFiles/Run.dir/Mid/Week04-1/Te06.cpp.obj	c23949769a3fb7c8
 1002	1173	7312549937003796	CppProgramming_EunsaemYang.exe	e66079d52b25f37e
-234	300	7330546788808555	Run.exe	6c427a4491b86816
+255	320	7336074466283342	Run.exe	16e148c09ab19b2d
 0	286	7312558656499981	CMakeFiles/Run.dir/Mid/Week01-2/Ex01.cpp.obj	e9f21c2a8289bc8f
 2	259	7318456121064379	CMakeFiles/Run.dir/Mid/Week02-1/Te11.cpp.obj	ed977d946a26bd73
 0	303	7318410366339109	CMakeFiles/Run.dir/Mid/Week02-1/Te03.cpp.obj	1eea6ada12c9be8f
@@ -20,3 +20,7 @@
 0	229	7330540025072762	CMakeFiles/Run.dir/Mid/Week04-1/ReferenceTe05.cpp.obj	acecc8eb3dad568f
 0	235	7330542256437153	CMakeFiles/Run.dir/Mid/Week04-1/ReferenceTe08.cpp.obj	ed4d77139740ac7c
 1	233	7330546788180197	CMakeFiles/Run.dir/Mid/Week04-1/ReferenceTe09.cpp.obj	33013144b4019d36
+2	283	7336062891733721	CMakeFiles/Run.dir/Mid/Week04-1/StringTe10.cpp.obj	5732cd6bc85a5add
+2	254	7336074465658057	CMakeFiles/Run.dir/Mid/Week04-1/ReferenceTe11.cpp.obj	9806cd01b9b88b33
+1	254	7336076927490401	CMakeFiles/Run.dir/Mid/Week04-1/StringTe10.cpp.obj	5732cd6bc85a5add
+257	329	7336076928201883	Run.exe	1b55acb3120c9724

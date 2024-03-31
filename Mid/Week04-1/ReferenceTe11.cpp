@@ -1,9 +1,15 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
-static void find2replace(char *fstr, char re, bool &success){
-    
+static void find2replace(string &str, const string &has, const string &replace, bool &result){
+    for (int i = 0; i < str.length(); ++i) {
+        if (str[i] == has[0]){
+            str[i] = replace[0];
+            result = true;
+        }
+    }
 }
 
 int main() {
@@ -11,12 +17,11 @@ int main() {
     string has = "+";
     string replace = "p";
     bool result = false;
-    cout << "변경 전 문자열 = " << str << endl;
+    cout << "Before = " << str << endl;
     find2replace(str, has, replace, result);
-    if (result == true){
-        cout << "변경 후 문자열 = " << str << endl;
-    }else{
-        cout << str << "에서 " << has << "를 발견하지 못함." << endl;
-    }
+    if (result == true)
+        cout << "After = " << str << endl;
+    else
+        cout << str << " : " << has << " not found.." << endl;
     return 0;
 }
