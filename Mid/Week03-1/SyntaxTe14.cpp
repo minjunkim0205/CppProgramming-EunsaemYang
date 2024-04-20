@@ -7,7 +7,7 @@ int charDistance(char a, char b){
 }
 
 char listExam(initializer_list<char> data, char c){
-    char ans = CHAR_MAX;
+    char ans = *data.begin();
     for(auto element : data){
         if(charDistance(element, c) < charDistance(ans, c)){
             ans = element;
@@ -17,7 +17,7 @@ char listExam(initializer_list<char> data, char c){
 }
 
 int main(){
-    cout << "{ 'd', 'p', 'r', 'w', 'g', 'f' } the letters closest to h are : " ;
+    cout << "{ 'd', 'p', 'r', 'w', 'g', 'f' } the letters closest to h are : ";
     cout << listExam({ 'd', 'p', 'r', 'w', 'g', 'f' }, 'h') << "\n";
     cout << "{ 'k', 'q', 'b', 'r', 'a', 'e', 'v', 'z'} the letters closest to w are : ";
     cout << listExam({ 'k', 'q', 'b', 'r', 'a', 'e', 'v', 'z'}, 'w') << "\n";

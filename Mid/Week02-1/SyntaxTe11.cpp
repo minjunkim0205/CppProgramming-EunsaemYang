@@ -18,7 +18,8 @@ int main(){
         } else if (s == "hex" || s == "16"){
             cout << "0x" << hex;
         } else if (s == "digit" || s == "10"){
-            cout << fixed;
+            continue;
+            //cout << fixed;
         } else {
             cout << "Error" << "\n";
             break;

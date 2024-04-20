@@ -3,13 +3,13 @@
 
 using namespace std;
 
-string removeChar(string str, char c){
-    int pos = str.find(c);
+string removeChar(string* str, char c){
+    int pos = (*str).find(c);
     while(pos != -1){
-        str.erase(pos, 1);
-        pos = str.find(c);
+        (*str).erase(pos, 1);
+        pos = (*str).find(c);
     }
-    return str;
+    return *str;
 } 
 string findAndReplace(string str, string olds, string news){
     int pos = str.find(olds);
@@ -24,13 +24,13 @@ int main() {
     string str; getline(cin, str);
     cout << "Enter del string >> ";
     char c; cin >> c;
-    cout << "Del string after : " << removeChar(str, c) << endl << endl;
+    cout << "Del string after : " << removeChar(&str, c) << endl << endl;
     
     string str1 = "an old string";
     string str2("an old");
     string str3("a new");
-    string strnew = findAndReplace(str1, str2, str3);
-    cout << "\"" << str1 << "\" : \"" << str2 << "\"->\"" << str3 << "\" = \"" << strnew << "\"\n";
+    string str_new = findAndReplace(str1, str2, str3);
+    cout << "\"" << str1 << "\" : \"" << str2 << "\"->\"" << str3 << "\" = \"" << str_new << "\"\n";
     
     return 0;
 }

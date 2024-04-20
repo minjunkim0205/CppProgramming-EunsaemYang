@@ -7,4 +7,3 @@ int main() {
     cout << str.length() << '\n';
     return 0;
 }
-        
