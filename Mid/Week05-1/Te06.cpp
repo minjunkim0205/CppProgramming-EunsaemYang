@@ -11,7 +11,7 @@ public:
     Rectangle (int len, int wid);
 };
 /*Override*/
-Rectangle :: Rectangle (int len, int wid) : length(len), height(wid){}
+Rectangle::Rectangle (int len, int wid) : length(len), height(wid){}
 /*Main*/
 int main(){
     return 0;

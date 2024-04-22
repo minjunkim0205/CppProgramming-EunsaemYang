@@ -17,6 +17,7 @@ public:
     ~Circle(){
         cout << "Dstructor circle" << '\n';
     }
+    // Method
     void setRadius(int r){
         this->radius = r;
     }
