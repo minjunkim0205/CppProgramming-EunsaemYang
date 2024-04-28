@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 
 using namespace std;
 /*Class*/
@@ -9,32 +10,40 @@ private:
     int id;
 public:
     // Construct
-    Person(char *_name, int _id) : name(_name), id(_id) {
+    Person(char *_name, int _id){
+        this->name = new char[strlen(_name) + 1];
+        strcpy(this->name, _name);
+        this->id = _id;
     }
     // Copy construct
     /*
-    Person(const Person &_person) : Person(_person.name, _person.id){ 여기서 _person.name, _person.id
-    가 접근 가능한 이유가 궁금함. 해당 field 값들은 분명 private 영역인데 어떻게 접근이 가능한지.
+    Person(Person &_person) 생성자 에서 _person.name, _person.id가 접근 가능한 이유가 궁금함. 
+    해당 field 값들은 분명 private 영역인데 어떻게 접근이 가능한지.
     */
-    Person(Person &_person) : Person(_person.name, _person.id){ // 복사 생성자
+    Person(Person &_person){ // 복사 생성자
+        this->name = new char[strlen(_person.name) + 1];
+        strcpy(this->name, _person.name);
+        this->id = _person.id;
     }
     // Destruct
     ~Person(){
-        /*
-        delete[] this->name; 여기서 예외가 발생하는지 궁금함. 
-        또한 delete를 사용하면 안된다면 name 포인터는 어떻게 해제가 되는지도 궁금함.
-        */
-        //delete[] this->name;
+        delete[] this->name;
     }
     // Method
     char* getName(){
-        return this->name;
+        if (this->name != nullptr) {
+            return this->name;
+        } else {
+            return "";
+        }
     }
     int getId(){
         return this->id;
     }
-    void setName(char* _name){
-        this->name = _name;
+    void setName(char* _name){  
+        delete[] this->name;
+        this->name = new char[strlen(_name) + 1];
+        strcpy(this->name, _name);
     }
     void setId(int _id){
         this->id = _id;
@@ -44,7 +53,6 @@ public:
 int main(){
     Person a{"Minjun\0", 4828};
     Person b{a};
-    a.setName("Changjun\0");
     cout << "Person a | name = " << a.getName() << ", id = " << a.getId() << '\n';
     cout << "Person b | name = " << b.getName() << ", id = " << b.getId() << '\n';
     return 0;
