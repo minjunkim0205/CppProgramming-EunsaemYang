@@ -1,29 +1,19 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
-/*Class*/
-class Accumulator{
-private:
-    // Field
-    int value;
-public:
-    // Construct
-    Accumulator(int val) : value{val} {
-    }
-    // Method
-    Accumulator &add(int n){
-        this->value += n;
-        return *(this);
-    }
-    int get(){ 
-        return this->value; 
-    }
-};
+/*Function*/
+/*
+왜 Rvalue ref로만 코드가 정상 작동하는지 궁금함
+*/
+void message_print(const string &&_str){
+    cout << "message = " << _str << '\n';
+}
 /*Main*/
 int main(){
-    Accumulator acc{10};
-    cout << acc.get() << endl; //10 출력
-    acc.add(1).add(2).add(3); //acc 객체의 value는 16이 됨.
-    cout << acc.get() << endl; //16 출력
+    string str_a = "apple";
+    string str_b = "banana";
+    message_print(move(str_a)); // move()로 Rvalue 로 변환
+    message_print(str_a + str_b);
     return 0;
 }
