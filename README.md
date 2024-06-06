@@ -2,13 +2,8 @@
 
 ## Preview
 
-![Preview](Preview.png)
+![Preview](./Preview.png)
 
 ## Introduction
 
 > 2024년 1학기 C++프로그래밍 [02]
-
-## File name
-
-> TeXX : 과제
-> ReXX : 실습
